@@ -4,6 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UsmanAsif166/NewsApp.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
