@@ -1,15 +1,16 @@
 {
-
+  "homepage": "https://usmanasif166.github.io/NewsApp/",
   "name": "newsapp",
   "version": "0.1.0",
   "private": true,
-  "start": "node index.js",
+  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "blobity": "^0.2.1",
     "framer-motion": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "rc-color-picker": "^1.2.6",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.1",
@@ -22,8 +23,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=4096 start",
-    "build": "react-scripts --max_old_space_size=4096 build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
