@@ -2,9 +2,9 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import News from "./components/News";
 // import ReactDOM from "react-dom/client";
-// import AnimatedCursor from "react-animated-cursor"
+import AnimatedCursor from "react-animated-cursor"
 import LoadingBar from 'react-top-loading-bar'
-import Blobity from 'blobity';
+// import Blobity from 'blobity';
 
 import {
     BrowserRouter,
@@ -17,12 +17,12 @@ const App = () => {
     const country = 'us';
 
 
-    const options = { color: 'rgb(180, 180, 180)' };
-    new Blobity(options);
+    // const options = { color: 'rgb(180, 180, 180)' };
+    // new Blobity(options);
     return (
         <div>
 
-            {/* <AnimatedCursor
+             <AnimatedCursor
                     color="255,64,64"
                     innerSize={12}
                     outerSize={20}
@@ -32,8 +32,8 @@ const App = () => {
                     outerStyle={{
                         border: '0 solid #2F4F4F'
                     }}
-                /> */}
-            <options />
+                /> 
+            {/* <options /> */}
             <BrowserRouter>
                 <NavBar />
                 <LoadingBar
